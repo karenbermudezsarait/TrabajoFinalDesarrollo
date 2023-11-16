@@ -1,12 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  background: #e9d2f5;
-  font-family: "Open Sans", sans-serif;
+  background: #ffffff;
+  font-family: "Poppins", sans-serif;
 }
 
 .nav-container {
@@ -15,12 +15,12 @@ body {
   justify-content: space-between;
   align-items: center;
   margin: auto;
-  height: 85px;
+  height: 75px;
   width: 100%;
 }
 
 nav {
-  background: #654ea3;
+  background: #ac92f3;
   padding: 10px;
 }
 
@@ -38,6 +38,15 @@ ul {
   margin-left: 45px;
 }
 
+.logo-container {
+  max-width: 100%;
+}
+
+.logo-container img {
+  width: 100%;
+  height: auto;
+}
+
 li {
   display: inline;
   margin-right: 20px;
@@ -53,6 +62,13 @@ a:hover {
   color: #edd0fe;
 }
 
+h2.titulo-galería {
+  font-size: 40px;
+}
+
+.enlace {
+}
+
 .titulo {
   font-family: "Abril Fatface", serif;
   font-size: 60px;
@@ -66,7 +82,7 @@ a:hover {
 
 .titulo-descuentos {
   font-family: "Abril Fatface", serif;
-  font-size: 30px;
+  font-size: 40px;
   text-align: center;
   padding-top: 30px;
 }
@@ -80,22 +96,25 @@ a:hover {
   border-radius: 5px;
   text-decoration: none;
   cursor: pointer;
+  margin-top: 20px;
+  display: inline-block;
 }
 
 .cta-button:hover {
-  background-color: #e4c1f8be;
+  background-color: #8c74d6;
+  color: #fff;
 }
 
 .card {
   width: 312px;
   height: 380px;
-  background-color: #fff;
+  background-color: #8c74d6;
   border-radius: 20px;
   margin-bottom: 20px;
   padding: 10px;
   border: 1px solid #ccc;
   text-align: center;
-  color: #654ea3;
+  color: #fff;
 }
 
 .imagencard {
@@ -106,9 +125,12 @@ a:hover {
   margin-top: 20px;
 }
 
-.card h2 {
+.card span {
   margin-top: 10px;
   margin-bottom: 5px;
+  font-size: 20px;
+  font-family: "Abril Fatface", serif;
+  display: block;
 }
 
 .card p {
@@ -117,6 +139,7 @@ a:hover {
 }
 
 h2 {
+  font-family: "Abril Fatface", serif;
 }
 
 p {
@@ -142,25 +165,30 @@ header article {
   padding: 75px 0 150px 0;
 }
 
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.container-galeria {
+  max-width: 1280px;
+  margin: auto;
 }
 
-.gallery-item {
-  position: relative;
-  margin: 10px;
-  overflow: hidden;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s;
-  width: 80%;
-  height: auto;
+.gale {
+  display: flex;
+  width: 100%;
+}
+
+.gale figure {
+  margin: 0;
+  padding: 0;
+  width: 25%;
+}
+
+.gale img {
+  display: block;
+  max-width: 100%;
 }
 
 .titulo-galeria {
   font-family: "Abril Fatface", serif;
-  font-size: 30px;
+  font-size: 40px;
   text-align: center;
 }
 
@@ -206,43 +234,13 @@ header {
   background-position: right center;
   background-size: 50%;
   height: 80%;
-  margin: 10% 0;
+  margin: 5% 0;
 }
 
 .container {
   max-width: 1280px;
   margin: 0 auto;
   padding: 5px;
-}
-
-.gallery {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.gallery-container {
-  margin: 100px 0;
-  max-width: 1280px;
-  display: flex;
-}
-
-.gallery-item {
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s;
-}
-
-.gallery-item:hover {
-  transform: scale(1.1);
-}
-
-.gallery-item img {
-  max-width: 100%;
-  height: auto;
-  display: block;
 }
 
 .overlay {
@@ -286,7 +284,7 @@ header {
 .nosotros {
   text-align: center;
   font-family: "Abril Fatface", serif;
-  font-size: 30px;
+  font-size: 40px;
 }
 
 .texto {
@@ -309,12 +307,17 @@ header {
 
 .informacion {
   text-align: center;
+  margin: 0px 0 20px;
+}
+
+.info {
+  margin: 0px;
 }
 
 .visitanos {
   text-align: center;
   font-family: "Abril Fatface", serif;
-  font-size: 30px;
+  font-size: 40px;
 }
 
 .btn {
@@ -332,21 +335,22 @@ header {
   display: inline-block;
   padding: 10px 20px;
   background-color: #edd0fe;
+  border: solid 1px #edd0fe;
   color: black;
   text-decoration: none;
-  border: none;
   border-radius: 5px;
   font-size: 20px;
   margin-bottom: 25px;
 }
 
 .boton-email:hover {
-  background-color: #e4c1f8be;
+  background-color: #fff;
+  color: #654ea3;
+  border: solid 1px #654ea3;
 }
 
 footer {
-  background: #edd0fe;
-  background: #654ea3;
+  background: #ac92f3;
   color: #fff;
   text-align: center;
   padding: 20px 0;
@@ -355,6 +359,7 @@ footer {
 
 .footer-container {
   max-width: 1280px;
+  margin: auto;
 }
 
 .redes-sociales {
@@ -365,12 +370,17 @@ footer {
 
 .redes-sociales img {
   text-decoration: none;
-  color: #fff;
   margin: 0 20px;
   margin-top: 15px;
+  color: #edd0fe;
 }
 
 .copyright {
   font-family: "Abril Fatface", serif;
   margin-top: 30px;
+}
+
+section#SobreNosotros {
+  background: #edd0fe;
+  margin: 40px 0px;
 }

@@ -3,101 +3,112 @@
 
 <head>
   <meta charset="UTF-8" />
-  <title>Trabajo Final Desarrollo</title>
+  <title>FashionPet</title>
   <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
- <link
-      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comfortaa:wght@300&family=Edu+TAS+Beginner:wght@500&family=M+PLUS+Rounded+1c:wght@300&display=swap"
-      rel="stylesheet"
-    />  <link rel="stylesheet" href="estilos.css" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@300&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="estilos.css" />
 </head>
 
 <body>
   <nav>
     <div class="nav-container">
-      <div class="logo-text">Mascotas Glam</div>
+      <div class="logo-container">
+        <img src="/img/logo.png" alt="Logo FashionPet">
+      </div>
+
       <ul>
         <li class="enlace"><a href="#">Inicio</a></li>
-        <li class="enlace"><a href="">Descuentos</a></li>
-        <li class="enlace"><a href="#">Acerca de nosotros</a></li>
-        <li class="enlace"><a href="#">Galeria</a></li>
-        <li class="enlace"><a href="#">Contacto</a></li>
+        <li class="enlace"><a href="#Descuentos">Descuentos</a></li>
+        <li class="enlace"><a href="#Galeria">Galeria</a></li>
+        <li class="enlace"><a href="#SobreNosotros">Sobre Nosotros</a></li>
+        <li class="enlace"><a href="#Contacto">Contacto</a></li>
       </ul>
     </div>
   </nav>
   <header>
-    <div class="container dflex">
-      <article>
-        <h1 class="titulo">Somos Mascotas Glam</h1>
-        <span class="subtitulo">
-          ¡Y por el dia del animal te damos estos super descuentos!
-        </span>
+    <section id="Inicio">
+      <div class="container dflex">
+        <article>
+          <h1 class="titulo">Somos FashionPet</h1>
+          <span class="subtitulo">
+            ¡Y por el dia del animal te damos estos super descuentos!
+          </span>
 
-       <div>
-        <br />
-        <br />
-         <a href="#" class="cta-button">Ver descuentos</a>
-       </div>
-        </artice>
-    </div>
+          <div>
+            <a href="#Descuentos" class="cta-button">Ver descuentos</a>
+          </div>
+          </artice>
+      </div>
+    </section>
   </header>
 
   <h2 class="titulo-descuentos">Descuentos</h2>
-  <section>
+
+  <section id="Descuentos">
     <div class="container dflex">
       <div class="card">
         <article>
-          <img class="imagencard" src="img/lentescancheros.jpg" alt="Lentes cancheros" />
-          <h2 class="h2">Lentes cancheros</h2>
+          <img class="imagencard" src="/img/lentescancheros.jpg" alt="Lentes cancheros" />
+          <span>Lentes cancheros</span>
           <p>$3000</p>
         </article>
       </div>
 
       <div class="card">
         <article>
-          <img class="imagencard" src="img/disfraznavidad.jpg" alt="Disfraz navidad" />
-          <h2 class="h2">Disfraz navidad</h2>
+          <img class="imagencard" src="/img/disfraznavidad.jpg" alt="Disfraz navidad" />
+          <span>Disfraz navidad</span>
           <p>$8000</p>
         </article>
       </div>
 
       <div class="card">
         <article>
-          <img class="imagencard" src="img/vinchacoronaymoño.jpg" alt="Vincha y corona" />
-          <h2 class="h2">Vincha corona y moño</h2>
+          <img class="imagencard" src="/img/vinchacoronaymoño.jpg" alt="Vincha y corona" />
+          <span>Vincha corona y moño</span>
           <p>$2800</p>
         </article>
       </div>
     </div>
   </section>
 
-  <section class="container gallery">
-    <h2 class="titulo-galería">Galería</h2>
-    <div class="gallery-container">
-      <div class="gallery-item">
-        <img src="img/chalecomilitar.jpg" alt="Chaleco Militar" />
-        <div class="overlay">
-          <h2>Chaleco Militar</h2>
-        </div>
+
+  <section id="Galeria">
+    <div class="container-galeria">
+      <h2 class="titulo-galería">Galería</h2>
+      <div class="gale">
+        <figure>
+          <a href="/img/chalecomilitar(1).jpg" target="new" title="ampliar imagen">
+            <img src="/img/chalecomilitar(1).jpg" alt="" class="img-fluid">
+          </a>
+        </figure>
+
+        <figure>
+          <a href="img/collarbrillos(1).jpg" target="new" title="ampliar imagen">
+            <img src="/img/collarbrillos(1).jpg" alt="" class="img-fluid">
+          </a>
+        </figure>
+
+        <figure>
+          <a href="img/vestidovolados(1).jpg" target="new" title="ampliar imagen">
+            <img src="/img/vestidovolados(1).jpg" alt="" class="img-fluid">
+          </a>
+        </figure>
+
+        <figure>
+          <a href="img/vestidovolados(1).jpg" target="new" title="ampliar imagen">
+            <img src="/img/vestidovolados(1).jpg" alt="" class="img-fluid">
+          </a>
+        </figure>
+        </article>
       </div>
-      <div class="gallery-item">
-        <img src="img/vestidovolados.jpg" alt="Vestido volados" />
-        <div class="overlay">
-          <h2>Vestido volados</h2>
-        </div>
-      </div>
-      <div class="gallery-item">
-        <img src="img/collarbrillos.jpg" alt="Collar brillos" />
-        <div class="overlay">
-          <h2>Collar brillos</h2>
-        </div>
-      </div>
-    </div>
-    <div>
-      <a href="pagina_nueva.html" class="btn">Abrir Galería</a>
-    </div>
+
   </section>
 
-  <section>
+  <section id="SobreNosotros">
     <div class="container dflex">
       <div class="texto">
         <h2 class="nosotros">Sobre Nosotros</h2>
@@ -108,12 +119,12 @@
         </p>
       </div>
       <div class="foto">
-        <img src="img/disfrazpreso.png" alt="Disfraz preso" />
+        <img src="/img/disfrazpreso.png" alt="Disfraz preso" />
       </div>
     </div>
   </section>
 
-  <section class="veni">
+  <section id="Contacto">
     <h2 class="visitanos">Veni a visitarnos</h2>
     <div class="container dflex">
       <iframe
@@ -122,9 +133,11 @@
         referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
     <div class="informacion">
-      <p>Dirección: Patricias Argentinas 2584</p>
-      <p>Teléfono:444 0800</p>
-      <p>¿Tienes alguna pregunta? Envíanos un correo electrónico:</p>
+      <p class="info">Dirección: Patricias Argentinas 2584</p>
+      <p class="info">Teléfono:444 0800</p>
+      <p class="info">¿Tienes alguna pregunta? Envíanos un correo electrónico:</p>
+    </div>
+    <div class="informacion">
       <a href="mailto:info@tudominio.com" class="boton-email">Enviar</a>
     </div>
   </section>
@@ -133,13 +146,13 @@
     <div class="footer-container">
       <div class="redes-sociales">
         <a href="https://www.instagram.com/" target="_blank">
-          <img src="img/instagram.png" alt="instagram" />
+          <img src="/img/instagram.png" alt="instagram">
         </a>
         <a href="https://www.facebook.com/facebookcom/" target="_blank">
-          <img src="img/facebook.png" alt="facebook" />
+          <img src="/img/facebook.png" alt="facebook">
         </a>
         <a href="https://twitter.com/iniciarsesion_" target="_blank">
-          <img src="img/gorjeo.png" alt="twitter" />
+          <img src="/img/gorjeo.png" alt="twitter">
         </a>
       </div>
       <div class="copyright">
